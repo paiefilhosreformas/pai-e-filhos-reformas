@@ -5,67 +5,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pai e Filhos Reformas</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #222;
+    background: #f9f9f9;
 }
 
-/* TOPO */
+/* HEADER */
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
     url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 header h1 {
-    font-size: 38px;
+    font-size: 42px;
     margin: 0;
 }
 
 header p {
     font-size: 18px;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 14px 30px;
     background: #25D366;
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* SEÇÕES */
 section {
-    padding: 50px 20px;
-    max-width: 1000px;
+    padding: 60px 20px;
+    max-width: 1100px;
     margin: auto;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-weight: 600;
 }
 
 /* SERVIÇOS */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
     text-align: center;
+    font-weight: 500;
 }
 
 /* DIFERENCIAIS */
@@ -78,7 +100,12 @@ h2 {
 /* GALERIA */
 .galeria img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
 }
 
 /* WHATS FIXO */
@@ -90,11 +117,11 @@ h2 {
     color: white;
     padding: 15px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
 }
 
-/* RODAPÉ */
+/* FOOTER */
 footer {
     background: #111;
     color: white;
@@ -113,28 +140,57 @@ footer {
 </header>
 
 <section>
-    <h2>Quem Somos</h2>
-    <p>
-    Empresa especializada em reformas e construções, com foco em qualidade,
-    compromisso com prazo e satisfação do cliente.
-    Trabalhamos com responsabilidade e atenção aos detalhes.
+    <h2>Sobre Nós</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+    Empresa especializada em reformas e construções, atuando com qualidade,
+    responsabilidade e foco total na satisfação do cliente.
     </p>
 </section>
 
 <section>
     <h2>Nossos Serviços</h2>
     <div class="grid">
-        <div class="card">Reformas em geral</div>
-        <div class="card">Construção</div>
-        <div class="card">Pintura</div>
-        <div class="card">Pisos e revestimentos</div>
-        <div class="card">Elétrica</div>
-        <div class="card">Hidráulica</div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+            <p>Reformas em geral</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+            <p>Construção</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
+            <p>Pintura</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092334425-3c9c5b41f9f7">
+            <p>Pisos e revestimentos</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092588429-8c4e6f8e1a5f">
+            <p>Elétrica</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581578017093-cd30fce4c7e3">
+            <p>Hidráulica</p>
+        </div>
+
+        <div class="card">
+            <img src="obra1.jpg">
+            <p>Estruturas de concreto pré-moldado</p>
+        </div>
+
     </div>
 </section>
 
 <section class="diferenciais">
-    <h2>Por que escolher a gente</h2>
+    <h2>Diferenciais</h2>
     <p>
     ✔ Prazo garantido<br>
     ✔ Atendimento rápido<br>
@@ -147,13 +203,11 @@ footer {
 <section>
     <h2>Trabalhos Realizados</h2>
     <div class="grid galeria">
-        <img src="https://images.unsplash.com/photo-1581092919534-7c3f6c94d2b6">
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+        <img src="obra1.jpg">
     </div>
 </section>
 
-<section style="text-align:center;">
+<section class="cta">
     <h2>Solicite seu orçamento</h2>
     <p>Resposta rápida direto no WhatsApp</p>
     <a class="btn" href="https://wa.me/5551985447313?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento">Falar no WhatsApp</a>
