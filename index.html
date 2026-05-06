@@ -9,57 +9,92 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #222;
 }
 
+/* TOPO */
 header {
-    background: #111;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+    background-size: cover;
     color: white;
-    padding: 40px;
     text-align: center;
+    padding: 80px 20px;
 }
 
 header h1 {
+    font-size: 38px;
     margin: 0;
-    font-size: 36px;
 }
 
 header p {
-    margin-top: 10px;
+    font-size: 18px;
+    margin: 15px 0;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
+    padding: 14px 28px;
     background: #25D366;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
+/* SEÇÕES */
 section {
-    padding: 40px;
+    padding: 50px 20px;
     max-width: 1000px;
     margin: auto;
 }
 
 h2 {
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.servicos {
+/* SERVIÇOS */
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .card {
     background: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
 }
 
+/* DIFERENCIAIS */
+.diferenciais {
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+/* GALERIA */
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* WHATS FIXO */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* RODAPÉ */
 footer {
     background: #111;
     color: white;
@@ -73,52 +108,61 @@ footer {
 
 <header>
     <h1>Pai e Filhos Reformas</h1>
-    <p>Reformas e construções com qualidade, agilidade e preço justo</p>
-    <a class="btn" href="https://wa.me/5551985447313">Solicitar Orçamento</a>
+    <p>Reformas completas com prazo garantido e acabamento profissional</p>
+    <a class="btn" href="https://wa.me/5551985447313?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento">Solicitar Orçamento</a>
 </header>
 
 <section>
     <h2>Quem Somos</h2>
     <p>
-    Somos uma empresa especializada em reformas e construções, trabalhando com responsabilidade,
-    qualidade e compromisso com o cliente. Nosso objetivo é entregar um serviço bem feito,
-    dentro do prazo e com excelente acabamento.
+    Empresa especializada em reformas e construções, com foco em qualidade,
+    compromisso com prazo e satisfação do cliente.
+    Trabalhamos com responsabilidade e atenção aos detalhes.
     </p>
 </section>
 
 <section>
     <h2>Nossos Serviços</h2>
-    <div class="servicos">
+    <div class="grid">
         <div class="card">Reformas em geral</div>
         <div class="card">Construção</div>
         <div class="card">Pintura</div>
         <div class="card">Pisos e revestimentos</div>
         <div class="card">Elétrica</div>
         <div class="card">Hidráulica</div>
-        <div class="card">Acabamentos</div>
-        <div class="card">Manutenções</div>
     </div>
 </section>
 
-<section>
+<section class="diferenciais">
     <h2>Por que escolher a gente</h2>
     <p>
-    ✔ Compromisso com prazos<br>
-    ✔ Atendimento direto<br>
-    ✔ Qualidade no acabamento<br>
+    ✔ Prazo garantido<br>
+    ✔ Atendimento rápido<br>
+    ✔ Acabamento profissional<br>
     ✔ Preço justo<br>
-    ✔ Experiência na área
+    ✔ Experiência comprovada
     </p>
 </section>
 
 <section>
-    <h2>Fale Conosco</h2>
-    <p>Solicite seu orçamento sem compromisso:</p>
-    <a class="btn" href="https://wa.me/5551985447313">Falar no WhatsApp</a>
+    <h2>Trabalhos Realizados</h2>
+    <div class="grid galeria">
+        <img src="https://images.unsplash.com/photo-1581092919534-7c3f6c94d2b6">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+    </div>
 </section>
 
+<section style="text-align:center;">
+    <h2>Solicite seu orçamento</h2>
+    <p>Resposta rápida direto no WhatsApp</p>
+    <a class="btn" href="https://wa.me/5551985447313?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento">Falar no WhatsApp</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5551985447313">💬</a>
+
 <footer>
-    <p>Pai e Filhos Reformas - Todos os direitos reservados</p>
+    Pai e Filhos Reformas © Todos os direitos reservados
 </footer>
 
 </body>
