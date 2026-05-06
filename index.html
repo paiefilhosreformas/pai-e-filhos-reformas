@@ -1,152 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pai e Filhos Reformas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pai e Filhos Reformas</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
 
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
-    body { background:#f9f9f9; color:#333; }
+/* TOPO */
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-    header {
-      height:100vh;
-      background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('imagens/capa.jpg');
-      background-size:cover;
-      background-position:center;
-      display:flex; align-items:center; justify-content:center;
-      text-align:center; color:#fff;
-    }
+header h1 {
+    font-size: 38px;
+    margin: 0;
+}
 
-    header h1 { font-size:42px; margin-bottom:20px; }
+header p {
+    font-size: 18px;
+    margin: 15px 0;
+}
 
-    .cta {
-      padding:12px 25px; background:#ff6600; color:#fff;
-      text-decoration:none; border-radius:6px; font-weight:600;
-    }
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
 
-    section { padding:60px 20px; max-width:1100px; margin:auto; }
-    h2 { text-align:center; margin-bottom:20px; font-weight:600; }
+/* SEÇÕES */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-    .sobre p { text-align:center; max-width:700px; margin:auto; }
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
+/* SERVIÇOS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
 
-    .card {
-      background:#fff; border-radius:10px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      overflow:hidden; transition:0.3s;
-    }
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
 
-    .card:hover { transform:translateY(-5px); }
+/* DIFERENCIAIS */
+.diferenciais {
+    background: #111;
+    color: white;
+    text-align: center;
+}
 
-    .card img {
-      width:100%; height:180px; object-fit:cover;
-    }
+/* GALERIA */
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+}
 
-    .card h3 { padding:15px; font-weight:600; }
-    .card p { padding:0 15px 20px; font-size:14px; }
+/* WHATS FIXO */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
 
-    footer {
-      background:#222; color:#fff;
-      text-align:center; padding:20px;
-    }
-  </style>
+/* RODAPÉ */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div>
     <h1>Pai e Filhos Reformas</h1>
-    <a href="https://wa.me/5551985447313" class="cta">Solicitar Orçamento</a>
-  </div>
+    <p>Reformas completas com prazo garantido e acabamento profissional</p>
+    <a class="btn" href="https://wa.me/5551985447313?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento">Solicitar Orçamento</a>
 </header>
 
-<section class="sobre">
-  <h2>Sobre Nós</h2>
-  <p>Especialistas em reformas e construções com foco em qualidade e acabamento profissional.</p>
+<section>
+    <h2>Quem Somos</h2>
+    <p>
+    Empresa especializada em reformas e construções, com foco em qualidade,
+    compromisso com prazo e satisfação do cliente.
+    Trabalhamos com responsabilidade e atenção aos detalhes.
+    </p>
 </section>
 
 <section>
-  <h2>Serviços</h2>
-  <div class="grid">
-
-    <div class="card">
-      <img src="imagens/pintura.jpg">
-      <h3>Pintura</h3>
-      <p>Pintura interna e externa profissional.</p>
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+        <div class="card">Reformas em geral</div>
+        <div class="card">Construção</div>
+        <div class="card">Pintura</div>
+        <div class="card">Pisos e revestimentos</div>
+        <div class="card">Elétrica</div>
+        <div class="card">Hidráulica</div>
     </div>
+</section>
 
-    <div class="card">
-      <img src="imagens/reforma.jpg">
-      <h3>Reformas</h3>
-      <p>Reformas completas com alto padrão.</p>
-    </div>
-
-    <div class="card">
-      <img src="imagens/alvenaria.jpg">
-      <h3>Alvenaria</h3>
-      <p>Serviços de alvenaria e construção.</p>
-    </div>
-
-    <div class="card">
-      <img src="imagens/hidraulica.jpg">
-      <h3>Hidráulica</h3>
-      <p>Instalações e manutenção hidráulica.</p>
-    </div>
-
-    <div class="card">
-      <img src="imagens/eletrica.jpg">
-      <h3>Elétrica</h3>
-      <p>Serviços elétricos com segurança.</p>
-    </div>
-
-    <div class="card">
-      <img src="imagens/pisos.jpg">
-      <h3>Pisos e Revestimentos</h3>
-      <p>Instalação de pisos e acabamentos.</p>
-    </div>
-
-    <div class="card">
-      <img src="imagens/concreto.jpg">
-      <h3>Concreto Pré-moldado</h3>
-      <p>Estruturas resistentes e duráveis.</p>
-    </div>
-
-  </div>
+<section class="diferenciais">
+    <h2>Por que escolher a gente</h2>
+    <p>
+    ✔ Prazo garantido<br>
+    ✔ Atendimento rápido<br>
+    ✔ Acabamento profissional<br>
+    ✔ Preço justo<br>
+    ✔ Experiência comprovada
+    </p>
 </section>
 
 <section>
-  <h2>Diferenciais</h2>
-  <div class="grid">
-
-    <div class="card">
-      <h3>Qualidade</h3>
-      <p>Acabamento profissional.</p>
+    <h2>Trabalhos Realizados</h2>
+    <div class="grid galeria">
+        <img src="https://images.unsplash.com/photo-1581092919534-7c3f6c94d2b6">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
     </div>
-
-    <div class="card">
-      <h3>Compromisso</h3>
-      <p>Entrega no prazo.</p>
-    </div>
-
-    <div class="card">
-      <h3>Experiência</h3>
-      <p>Equipe qualificada.</p>
-    </div>
-
-  </div>
 </section>
+
+<section style="text-align:center;">
+    <h2>Solicite seu orçamento</h2>
+    <p>Resposta rápida direto no WhatsApp</p>
+    <a class="btn" href="https://wa.me/5551985447313?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento">Falar no WhatsApp</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5551985447313">💬</a>
 
 <footer>
-  <p>Contato: (51) 98544-7313</p>
+    Pai e Filhos Reformas © Todos os direitos reservados
 </footer>
 
 </body>
