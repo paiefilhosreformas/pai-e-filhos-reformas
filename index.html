@@ -8,101 +8,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+    body { background:#f9f9f9; color:#333; }
 
     header {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('obra1.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
+      height:100vh;
+      background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('obra1.jpg');
+      background-size:cover;
+      background-position:center;
+      display:flex; align-items:center; justify-content:center;
+      text-align:center; color:#fff;
     }
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+    header h1 { font-size:42px; margin-bottom:20px; }
 
     .cta {
-      padding: 12px 25px;
-      background: #ff6600;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
+      padding:12px 25px; background:#ff6600; color:#fff;
+      text-decoration:none; border-radius:6px; font-weight:600;
     }
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+    section { padding:60px 20px; max-width:1100px; margin:auto; }
+    h2 { text-align:center; margin-bottom:20px; font-weight:600; }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    .sobre p {
-      text-align: center;
-      max-width: 700px;
-      margin: auto;
-    }
+    .sobre p { text-align:center; max-width:700px; margin:auto; }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
     }
 
     .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: 0.3s;
+      background:#fff; border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      overflow:hidden; transition:0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+    .card:hover { transform:translateY(-5px); }
 
     .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+      width:100%; height:180px; object-fit:cover;
     }
 
-    .card h3 {
-      padding: 15px;
-      font-weight: 600;
-    }
-
-    .card p {
-      padding: 0 15px 20px;
-      font-size: 14px;
-    }
+    .card h3 { padding:15px; font-weight:600; }
+    .card p { padding:0 15px 20px; font-size:14px; }
 
     footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
+      background:#222; color:#fff;
+      text-align:center; padding:20px;
     }
   </style>
 </head>
@@ -118,7 +71,7 @@
 
 <section class="sobre">
   <h2>Sobre Nós</h2>
-  <p>Especialistas em reformas e construções, entregando qualidade, agilidade e acabamento profissional.</p>
+  <p>Especialistas em reformas e construções com foco em qualidade e acabamento profissional.</p>
 </section>
 
 <section>
@@ -126,45 +79,45 @@
   <div class="grid">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?house-painting" loading="lazy">
       <h3>Pintura</h3>
-      <p>Pintura interna e externa com acabamento profissional.</p>
+      <p>Pintura interna e externa profissional.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?home-renovation" loading="lazy">
       <h3>Reformas</h3>
-      <p>Reformas completas com alto padrão de execução.</p>
+      <p>Reformas completas com alto padrão.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?bricklayer" loading="lazy">
       <h3>Alvenaria</h3>
-      <p>Construção e reparos estruturais em geral.</p>
+      <p>Serviços de alvenaria e construção.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?plumber-work" loading="lazy">
       <h3>Hidráulica</h3>
       <p>Instalações e manutenção hidráulica.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?electrician-work" loading="lazy">
       <h3>Elétrica</h3>
-      <p>Serviços elétricos com segurança e qualidade.</p>
+      <p>Serviços elétricos com segurança.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?tile-floor" loading="lazy">
       <h3>Pisos e Revestimentos</h3>
-      <p>Instalação de pisos e acabamentos diversos.</p>
+      <p>Instalação de pisos e acabamentos.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1590650046871-92c887180603" loading="lazy">
+      <img src="https://source.unsplash.com/400x300/?concrete-construction" loading="lazy">
       <h3>Concreto Pré-moldado</h3>
-      <p>Estruturas resistentes e de alta durabilidade.</p>
+      <p>Estruturas resistentes e duráveis.</p>
     </div>
 
   </div>
@@ -176,17 +129,17 @@
 
     <div class="card">
       <h3>Qualidade</h3>
-      <p>Acabamento profissional em todos os serviços.</p>
+      <p>Acabamento profissional.</p>
     </div>
 
     <div class="card">
       <h3>Compromisso</h3>
-      <p>Entrega dentro do prazo combinado.</p>
+      <p>Entrega no prazo.</p>
     </div>
 
     <div class="card">
       <h3>Experiência</h3>
-      <p>Equipe qualificada e experiente.</p>
+      <p>Equipe qualificada.</p>
     </div>
 
   </div>
