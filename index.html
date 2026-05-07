@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Pai e Filhos Reformas</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -20,36 +23,50 @@
       color:#222;
     }
 
-    header{
-      height:100vh;
-      background:
-      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-      url('banner.jpg');
+    /* ===== BANNER ===== */
 
-      background-size:cover;
-      background-position:center;
+    .hero-banner{
+      position:relative;
+      height:100vh;
+      overflow:hidden;
       display:flex;
       justify-content:center;
       align-items:center;
       text-align:center;
-      padding:20px;
       color:white;
     }
 
+    .banner-img{
+      position:absolute;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .overlay{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.60);
+    }
+
     .hero{
+      position:relative;
+      z-index:2;
+      padding:20px;
       max-width:800px;
     }
 
     .hero h1{
       font-size:58px;
       font-weight:700;
-      margin-bottom:15px;
+      margin-bottom:20px;
       line-height:1.1;
     }
 
     .hero p{
       font-size:22px;
-      margin-bottom:30px;
+      margin-bottom:35px;
       font-weight:300;
     }
 
@@ -70,6 +87,8 @@
       transform:scale(1.03);
     }
 
+    /* ===== SEÇÕES ===== */
+
     section{
       padding:70px 20px;
       max-width:1200px;
@@ -83,6 +102,8 @@
       font-weight:700;
     }
 
+    /* ===== SERVIÇOS ===== */
+
     .servicos{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -91,11 +112,13 @@
 
     .card{
       background:white;
-      padding:30px;
+      padding:35px;
       border-radius:12px;
       box-shadow:0 4px 15px rgba(0,0,0,0.08);
       transition:0.3s;
       text-align:center;
+      text-decoration:none;
+      color:#222;
     }
 
     .card:hover{
@@ -113,6 +136,8 @@
       line-height:1.6;
     }
 
+    /* ===== SOBRE ===== */
+
     .sobre{
       background:white;
       border-radius:15px;
@@ -127,6 +152,8 @@
       max-width:900px;
       margin:auto;
     }
+
+    /* ===== CTA ===== */
 
     .cta{
       background:#111;
@@ -146,6 +173,8 @@
       margin-bottom:35px;
     }
 
+    /* ===== RODAPÉ ===== */
+
     footer{
       background:#000;
       color:white;
@@ -153,6 +182,8 @@
       padding:25px;
       font-size:15px;
     }
+
+    /* ===== RESPONSIVO ===== */
 
     @media(max-width:768px){
 
@@ -175,121 +206,155 @@
     }
 
   </style>
+
 </head>
 
 <body>
 
-<header>
+  <!-- ===== BANNER ===== -->
 
-  <div class="hero">
+  <header class="hero-banner">
 
-    <h1>Pai e Filhos Reformas</h1>
+    <img src="banner.jpg" class="banner-img">
+
+    <div class="overlay"></div>
+
+    <div class="hero">
+
+      <h1>Pai e Filhos Reformas</h1>
+
+      <p>
+        Reformas, construção e acabamentos com qualidade profissional
+      </p>
+
+      <a class="btn" href="https://wa.me/5551985447313">
+        Solicitar Orçamento
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- ===== SERVIÇOS ===== -->
+
+  <section>
+
+    <h2 class="titulo">Nossos Serviços</h2>
+
+    <div class="servicos">
+
+      <a class="card" href="https://wa.me/5551985447313?text=Olá,%20quero%20orçamento%20de%20pintura">
+
+        <h3>Pintura</h3>
+
+        <p>
+          Pintura interna e externa com acabamento profissional.
+        </p>
+
+      </a>
+
+      <a class="card" href="https://wa.me/5551985447313?text=Olá,%20quero%20orçamento%20de%20reforma">
+
+        <h3>Reformas</h3>
+
+        <p>
+          Pequenas e grandes reformas residenciais.
+        </p>
+
+      </a>
+
+      <a class="card" href="https://wa.me/5551985447313?text=Olá,%20quero%20orçamento%20de%20alvenaria">
+
+        <h3>Alvenaria</h3>
+
+        <p>
+          Construção, reparos e estrutura em geral.
+        </p>
+
+      </a>
+
+      <a class="card" href="https://wa.me/5551985447313?text=Olá,%20quero%20orçamento%20hidráulico">
+
+        <h3>Hidráulica</h3>
+
+        <p>
+          Instalações e manutenção hidráulica completa.
+        </p>
+
+      </a>
+
+      <a class="card" href="https://wa.me/5551985447313?text=Olá,%20quero%20orçamento%20elétrico">
+
+        <h3>Elétrica</h3>
+
+        <p>
+          Instalações elétricas com segurança e eficiência.
+        </p>
+
+      </a>
+
+      <a class="card" href="https://wa.me/5551985447313?text=Olá,%20quero%20orçamento%20de%20pisos">
+
+        <h3>Pisos</h3>
+
+        <p>
+          Colocação de pisos e revestimentos.
+        </p>
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+
+  <section>
+
+    <div class="sobre">
+
+      <h2 class="titulo">Sobre Nós</h2>
+
+      <p>
+        Somos especialistas em reformas e construções, trabalhando com compromisso,
+        qualidade e responsabilidade em cada obra. Atuamos com foco em acabamento
+        profissional, cumprimento de prazo e atendimento direto ao cliente.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ===== CTA ===== -->
+
+  <section>
+
+    <div class="cta">
+
+      <h2>Precisa reformar?</h2>
+
+      <p>
+        Fale agora conosco e solicite um orçamento sem compromisso.
+      </p>
+
+      <a class="btn" href="https://wa.me/5551985447313">
+        Chamar no WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ===== RODAPÉ ===== -->
+
+  <footer>
 
     <p>
-      Reformas, construção e acabamentos com qualidade profissional
+      Pai e Filhos Reformas • WhatsApp: (51) 98544-7313
     </p>
 
-    <a class="btn" href="https://wa.me/5551985447313">
-      Solicitar Orçamento
-    </a>
-
-  </div>
-
-</header>
-
-<section>
-
-  <h2 class="titulo">Nossos Serviços</h2>
-
-  <div class="servicos">
-
-    <div class="card">
-      <h3>Pintura</h3>
-      <p>
-        Pintura interna e externa com acabamento profissional.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Reformas</h3>
-      <p>
-        Pequenas e grandes reformas residenciais.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Alvenaria</h3>
-      <p>
-        Construção, reparos e estrutura em geral.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Hidráulica</h3>
-      <p>
-        Instalações e manutenção hidráulica completa.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Elétrica</h3>
-      <p>
-        Instalações elétricas com segurança e eficiência.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Pisos</h3>
-      <p>
-        Colocação de pisos e revestimentos.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section>
-
-  <div class="sobre">
-
-    <h2 class="titulo">Sobre Nós</h2>
-
-    <p>
-      Somos especialistas em reformas e construções, trabalhando com compromisso,
-      qualidade e responsabilidade em cada obra. Atuamos com foco em acabamento
-      profissional, cumprimento de prazo e atendimento direto ao cliente.
-    </p>
-
-  </div>
-
-</section>
-
-<section>
-
-  <div class="cta">
-
-    <h2>Precisa reformar?</h2>
-
-    <p>
-      Fale agora conosco e solicite um orçamento sem compromisso.
-    </p>
-
-    <a class="btn" href="https://wa.me/5551985447313">
-      Chamar no WhatsApp
-    </a>
-
-  </div>
-
-</section>
-
-<footer>
-
-  <p>
-    Pai e Filhos Reformas • WhatsApp: (51) 98544-7313
-  </p>
-
-</footer>
+  </footer>
 
 </body>
+
 </html>
